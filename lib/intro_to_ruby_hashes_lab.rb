@@ -1,3 +1,5 @@
+require 'pry'
+
 def my_hash_creator(key, value)
   # return a hash that includes the key and value parameters passed into this method
 hash = {
@@ -18,6 +20,7 @@ def update_counting_hash(hash, key)
   
   if hash[key] = nil 
     hash[key] = 1 
+  binding.pry
   else
     hash[key] += 1
 end
