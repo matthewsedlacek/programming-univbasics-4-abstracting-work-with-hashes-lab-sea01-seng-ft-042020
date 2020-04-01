@@ -20,6 +20,7 @@ def update_counting_hash(hash, key)
   
   if hash[key] = nil 
     hash[key] = 1 
+  end 
   binding.pry
   else
     hash[key] += 1
